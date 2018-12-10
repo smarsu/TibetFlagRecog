@@ -2,8 +2,10 @@ import time
 import os
 import sys
 sys.path.append("utils")
+
 import tensorflow as tf
 import numpy as np
+
 from utils import model
 from utils import reader
 import value
