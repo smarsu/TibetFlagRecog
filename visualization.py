@@ -89,7 +89,7 @@ def main():
         print("Restore PNet weight!")
 
         pic_path = getPicPath()
-        pic_paths = ["train_flag.jpg"]#, "test_flag.jpg", "test_gun.jpg"]
+        pic_paths = ["test_visible.jpg"]#, "test_flag.jpg", "test_gun.jpg"]
         for pic_path in pic_paths:
             print(pic_path)
             test(sess, NET, cv2.imread(pic_path), data_mode="train_original") 
