@@ -70,10 +70,10 @@ def test(sess, NET, cvimg, data_mode):
 
     #cvimg = cv2.imread(pic_path)
     h, w, _ = cvimg.shape
-    #cv2.imshow("src", cvimg)
+    cv2.imshow("src", cvimg)
     cvimg = image_highlight(cvimg, sort_idx, cell_size=max(h, w) / H)
-    #cv2.imshow("highlight", cvimg)
-    #cv2.waitKey(0)
+    cv2.imshow("highlight", cvimg)
+    cv2.waitKey(0)
     return cvimg
 
 
