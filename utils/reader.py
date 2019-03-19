@@ -20,8 +20,8 @@ def getPicArr(Annotation_path, Image_path):
     return list(pic_arr)  # We need list to shuffle
 
 
-train_pic_arr = getPicArr(ga.Annotation_path, ga.Image_path)
-val_pic_arr = getPicArr(ga.Annotation_path_val, ga.Image_path_val)
+#train_pic_arr = getPicArr(ga.Annotation_path, ga.Image_path)
+#val_pic_arr = getPicArr(ga.Annotation_path_val, ga.Image_path_val)
 
 
 def getPicMap(train_pic_arr):
@@ -36,7 +36,7 @@ def getPicMap(train_pic_arr):
     return train_pic_map
 
 
-train_pic_map = getPicMap(train_pic_arr)
+#train_pic_map = getPicMap(train_pic_arr)
 
 
 def getTrainData(batch_size, model, data_set="train"):
